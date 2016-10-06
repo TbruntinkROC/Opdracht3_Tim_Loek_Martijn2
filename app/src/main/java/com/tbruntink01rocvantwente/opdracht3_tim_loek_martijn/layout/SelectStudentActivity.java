@@ -26,7 +26,7 @@ public class SelectStudentActivity extends AppCompatActivity {
 
         listViewStudents = (ListView)findViewById(R.id.listViewStudents);
 
-        //Students.getAllStudents();
+
         StudentArrayAdapter adapter = new StudentArrayAdapter(this,R.layout.activity_select_student,Students.getAllStudents());
 
         listViewStudents.setAdapter(adapter);
@@ -38,8 +38,11 @@ public class SelectStudentActivity extends AppCompatActivity {
                 Student student = Students.getAllStudents().get(position);
                 Intent intent = new Intent();
 
+                //geef de geselecteerde student mee
                 intent.putExtra("student",student);
+                //Voeg de intent en een code toe aan de "Result"
                 setResult(420,intent);
+                //Sluit de activity en ga terug naar de eerste activity
                 finish();
             }
         });
