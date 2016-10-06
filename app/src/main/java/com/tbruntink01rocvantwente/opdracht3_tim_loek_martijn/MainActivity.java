@@ -20,6 +20,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+        buttonSelectStudent = (Button)findViewById(R.id.buttonSelectStudent);
+
         buttonSelectStudent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

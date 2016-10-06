@@ -1,9 +1,11 @@
 package com.tbruntink01rocvantwente.opdracht3_tim_loek_martijn.data;
 
+import com.tbruntink01rocvantwente.opdracht3_tim_loek_martijn.R;
+
 import java.util.ArrayList;
 import java.util.List;
 
-import tim.example.com.opdracht1_email_project.R;
+
 
 /**
  * Created by Tim on 24-9-2016.
